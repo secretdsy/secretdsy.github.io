@@ -41,7 +41,7 @@ avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
 remote_theme: mmistakes/minimal-mistakes
-baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
+baseurl: "https://secretdsy.github.io" # the subpath of your site, e.g. /blog
 url: "https://secretdsy.github.io" # the base hostname & protocol for your site
 
 # Social settings
