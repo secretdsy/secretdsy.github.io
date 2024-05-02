@@ -22,8 +22,8 @@ email      : dykim@msjcorp.co.kr #this is also the email contact forms will go t
 description: "Site description"
 author     : Your Name
 # logo:     #optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 #height in px, defaults to 52px
+#   path: ../assets/img/favicon.png
+#   height: 60 #height in px, defaults to 52px
 
 locale: "en-US" # See available languages in _data/sitetext.yml
 
