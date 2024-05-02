@@ -18,24 +18,24 @@ en: &DEFAULT_EN
 
   services:
     title: "Services"
-    text: "Lorem ipsum"
+    text: "<br />"
     section: services
     list:
       - title: "Data Solution"
-        desc: "data data"
+        desc: "We perform overall data processing, <br />including data collection, data labeling, <br />and data cleansing."
         icon: fas fa-database #find more at https://fontawesome.com/icons
       - title: "AI Solution"
-        desc: "AI AI"
+        desc: "We develop an AI-based real-time <br />object detection engine."
         icon: fas fa-video
       - title: "Infra Solution"
-        desc: "Infra Infra"
+        desc: "We supply a variety of IT solutions."
         icon: fas fa-laptop
 
   portfolio:
     title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    # text: "Lorem ipsum dolor sit amet consectetur."
     section: portfolio
-    closebutton: "Close Project"
+    closebutton: "Close"
 
   # timeline:
   #   title: "Timeline"
@@ -110,7 +110,7 @@ en: &DEFAULT_EN
           #   icon: fab fa-linkedin-in
       - name: "Doyoung Kim"
         role: "Lead Engineer"
-        # image: assets/img/team/2.jpg
+        image: ../assets/img/team/doyoung.jpg
         social:
           # - url: https://twitter.com
           #   icon: fab fa-twitter
@@ -120,7 +120,7 @@ en: &DEFAULT_EN
             icon: fab fa-linkedin-in
       - name: "Ki-in Han"
         role: "Back-end Engineer"
-        # image: assets/img/team/500x500.jpg
+        image: ../assets/img/team/kiin.jpg
         social:
           # - url: https://twitter.com
           #   icon: fab fa-twitter
@@ -151,8 +151,8 @@ en: &DEFAULT_EN
       #   icon: "fab fa-twitter"
       # - url: https://facebook.com
       #   icon: "fab fa-facebook-f"
-      # - url: https://linkedin.com
-      #   icon: "fab fa-linkedin-in"
+      - url: https://www.linkedin.com/in/doyoung-kim-39b539194/
+        icon: "fab fa-linkedin-in"
       # - url: https://github.com/raviriley/agency-jekyll-theme
       #   icon: "fab fa-github"
       # - url: https://instagram.com

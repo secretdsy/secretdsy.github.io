@@ -1,13 +1,13 @@
 ---
 caption: #what displays in the portfolio grid:
-  title: Example
-  subtitle: subtitle
-  thumbnail: https://place-hold.it/400x300
+  title: 관제TOP-Safety
+  subtitle: Industrial safety management
+  thumbnail: ../assets/img/portfolio/safety_thumbnail.jpg
   
 #what displays when the item is clicked:
-title: Title
+title: 관제TOP-Safety
 subtitle: subtitle lorem ipsum dolor sit amet consectetur.
-image: https://place-hold.it/400x300 #main image, can be a link or a file in assets/img/portfolio
+image: ../assets/img/portfolio/safety_thumbnail.jpg  #main image, can be a link or a file in assets/img/portfolio
 alt: image alt text
 
 ---
