@@ -7,7 +7,7 @@ caption: #what displays in the portfolio grid:
 #what displays when the item is clicked:
 title: 관제TOP-Safety
 subtitle: subtitle lorem ipsum dolor sit amet consectetur.
-image: ../assets/img/portfolio/safety_thumbnail.jpg  #main image, can be a link or a file in assets/img/portfolio
+image: ../assets/img/portfolio/safety_sample.gif  #main image, can be a link or a file in assets/img/portfolio
 alt: image alt text
 
 ---
