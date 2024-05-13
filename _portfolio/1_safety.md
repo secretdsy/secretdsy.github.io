@@ -11,5 +11,5 @@ image: ../assets/img/portfolio/safety_sample.gif  #main image, can be a link or 
 alt: image alt text
 
 ---
-관제TOP-Safety system detects **dangerous situations** such as not wearing a safety helmet, accessing hazardous areas, or accessing heavy machinery.
+**관제TOP-Safety** system detects **dangerous situations** such as not wearing a safety helmet, accessing hazardous areas, or accessing heavy machinery.
 It can also detect additional dangerous objects required in the field.

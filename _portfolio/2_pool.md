@@ -11,5 +11,5 @@ image: ../assets/img/portfolio/pool_sample.gif  #main image, can be a link or a 
 alt: image alt text
 
 ---
-관제TOP-Pool system detects **dangerous situations** in swimming and diving pool. Detects people who are drowning, struggling in the water, or lying outside the water.
+**관제TOP-Pool** system detects **dangerous situations** in swimming and diving pool. Detects people who are drowning, struggling in the water, or lying outside the water.
 It can also detect additional dangerous objects required in the field.
