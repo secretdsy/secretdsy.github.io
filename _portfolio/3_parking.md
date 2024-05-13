@@ -6,17 +6,9 @@ caption: #what displays in the portfolio grid:
   
 #what displays when the item is clicked:
 title: 관제TOP-vParking
-subtitle: subtitle lorem ipsum dolor sit amet consectetur.
+subtitle:
 image: ../assets/img/portfolio/parking_sample.jpg  #main image, can be a link or a file in assets/img/portfolio
 alt: image alt text
 
 ---
-Use this area to describe your project. **Markdown** supported.
-
-optional info list (delete if not using):
-
-{:.list-inline} 
-- Date: 
-- Client: 
-- Category: 
-
+관제TOP-vParking system provides **parking lot management**. It provides parking lot usage status and surrounding parking lot status for users, and provides a real-time parking lot monitoring system for managers.<br/> In addition, we can provide parking lot management services around tourist attractions in cooperation with tourist attraction information services.
