@@ -38,6 +38,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+  - robots.txt
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -66,7 +67,7 @@ atom_feed:
 
 author:
   name   : "Doyoung Kim"
-  avatar : "/assets/images/bio/bio-photo.jpg"
+  avatar : "/assets/images/bio-photo.jpg"
   bio    : "Hi."
   links:
     # - label: "Website"
