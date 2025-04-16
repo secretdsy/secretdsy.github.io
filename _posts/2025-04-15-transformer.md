@@ -21,8 +21,8 @@ toc: true
 이 논문에서 제안한 Transformer가 나온 이후로 Language 분야는 엄청난 발전을 이뤘다. 그 이후에는 Vision, Vision-Language Models(VLM) 등 많은 분야에서 활용하기 시작하면서 많은 분야의 성능 향상에 큰 기여를 했다. 우선 이번 글에서는 논문에 나온대로 Language 분야를 기준으로 설명하려한다.  
 
 기존에 주를 이루던 Language 모델들은 RNN, LSTM 기반이었는데 몇 가지 문제점이 있었다.  
-1) 순차적으로 처리해서 병렬화 불가능    
-2) 긴 문장에서 과거 정보가 잘 사라짐  
+1. 순차적으로 처리해서 병렬화 불가능  
+2. 긴 문장에서 과거 정보가 잘 사라짐  
 
 이 논문에서는 Self-Attention을 도입하여 위 문제를 해결했고, 이어서 Self-Attention, Transformer Architecture에 대해 자세히 설명하려한다.  
 
