@@ -5,6 +5,7 @@ categories: [Paper]
 tags: [Transformer, Attention, NLP]
 math: true
 toc: true
+layout: single
 ---
 
 ## 📝 논문 정보
