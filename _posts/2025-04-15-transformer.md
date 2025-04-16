@@ -1,5 +1,5 @@
 ---
-title: "[논문리뷰] Attention Is All You Need"
+title: "[논문 리뷰] Attention Is All You Need"
 date: 2025-04-15 15:30:00 +0900
 categories: [Paper]
 tags: [Transformer, Attention, NLP]
@@ -84,12 +84,13 @@ Input + Posional Encoding -> Multi-Head Attention -> Feed Forward
 사실 이 논문을 처음 보는 것도 아니고, 이번에 다시 보면서 가장 크게 얻은 부분이 바로 PE다.  
 물론 혼자서 깨달은 것이 아님을 먼저 밝히며 내 친구이자 멘토인 [Yedarm Seong](https://github.com/mybirth0407)에게 감사를 표한다.  
 
-
-PE는 단순히 각 Embedding의 위치 정보를 전달하기 위한 장치다.  
+**우선, PE는 단순히 각 Embedding의 위치 정보를 전달하기 위한 장치다.**  
 
 Transformer는 PE없이는 RNN, LSTM과 다르게 순서를 알 수가 없다. **그런데 나는 이말이 제일 이해가 안갔다!**  
 "왜 순서를 알 수가 없지? 분명 Input Embedding을 만들 때 순서를 지켜서 만들 수 있을텐데", 그리고 "순서를 지키면 당연히 모델이 Input Embedding의 순차적인 정보를 이해할 수 있을 것"이라고 생각했다.  
-그런데 수식을 다시 살펴보면 $QK^T$ 내적할 때 K가 Q앞에 있는지, 뒤에 있는지 알려주는 부분이 있나? 당연히 없다... 이제야 순서를 알 수 없다는 말이 제대로 이해가 됐는데, 이걸 이해할 수 있게 설명해준 내용이 다음과 같다.  
+그런데 수식을 다시 살펴보면 $QK^T$ 내적할 때 문장에서 K가 Q앞에 있는지, 뒤에 있는지 알려주는 부분이 있나? 당연히 없다...  
+
+만약 아래 내용을 더 빨리 알았다면, Input Embedding을 만들 때 순서를 지키고 말고 생각할 것 없이 PE가 왜 필요한지 더 빨리 알았을 것 같다.
 
 Multi-layer Perceptron(MLP)에서 Input Layer의 Patch 단위로 순서를 섞어도 결국 매우 비슷한 Output을 낸다고 한다. 이 내용은 [MLP-Mixer](https://arxiv.org/pdf/2105.01601.pdf)의 결과를 참고한 내용이다.  
 
@@ -97,6 +98,8 @@ Multi-layer Perceptron(MLP)에서 Input Layer의 Patch 단위로 순서를 섞�
 
 그럼 이제 다시 입력으로 "I love you"라는 문장이 있을 때 "Love I you", "You I love" 등 여러 조합을 만들 수 있고, 각각의 단어가 Patch라고 보면 MLP-Mixer에서 증명한 내용에 의해 어떤 조합으로 들어와도 결과가 매우 비슷하다.  
 근데 이건 MLP 얘기 아니냐 할 수 있다. MLP 얘기가 맞다. 근데 Transformer도 PE가 없다면, 그리고 Self-Attention이 없다면, 더 넓은 관점에서는 MLP랑 다를 바가 없다고 볼 수 있다.  
+
+**이 논문에서 사용한 PE**  
 
 
 ---
