@@ -1,0 +1,20 @@
+{% comment %}
+  Minimal Mistakes default post meta include
+  read_time 제거
+{% endcomment %}
+
+{% if include.page %}
+  {% assign page = include.page %}
+{% endif %}
+
+<span class="page__meta">
+  {% if page.last_modified_at %}
+    <span class="page__meta-date">
+      <strong>Last updated:</strong> {{ page.last_modified_at | date: "%B %-d, %Y" }}
+    </span>
+  {% else %}
+    <span class="page__meta-date">
+      {{ page.date | date: "%B %-d, %Y" }}
+    </span>
+  {% endif %}
+</span>
