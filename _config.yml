@@ -26,6 +26,9 @@ search: true
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -56,6 +59,10 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+# feed 버튼 숨기기
+atom_feed:
+  hide: true
 
 author:
   name   : "Doyoung Kim"
