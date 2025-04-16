@@ -34,23 +34,23 @@ Attention은 사전적으로는 "참조, 집중, 주목, 주의"를 뜻한다. �
 "The animal didn't cross the road because it was too tired."  
 예를 들어 위 문장이 있을 때, **"it"** 은 문장에 있는 모든 단어들 중에 **"animal"** 과 더 관련이 있다고 판단하도록 하는 것이다.  
 
-이제 Attention 수식을 보며 설명하려고 한다.
-$$  
-Attention(Q, K, V) = softmax{\left(\frac{QK^T}{\sqrt{d_k}}\right)}V  
-$$  
+이제 Attention 수식을 보며 설명하려고 한다.  
+$$
+Attention(Q, K, V) = softmax{\left(\frac{QK^T}{\sqrt{d_k}}\right)}V
+$$
 
 $Q, K, V, \sqrt{d_k}$ 각각이 뜻하는 바는 다음과 같다.  
-1) $Q$(Query): 궁금한 단어  
-2) $K$(Key): 비교할 단어  
-3) $V$(Value): $K$와 짝지어진 정보  
+1) $Q$ (Query): 궁금한 단어  
+2) $K$ (Key): 비교할 단어  
+3) $V$ (Value): $K$와 짝지어진 정보  
 4) $\sqrt{d_k}$: $QK^T$ 값이 너무 커지는 것을 방지하기 위한 scaling factor이고, Key vector의 차원  
 
 수식의 우변을 보면 $softmax$(확률 값)과 $V$를 곱하게 되어있다.  
 즉, $Q$ 와 $K$의 유사도를 기반으로 $V$의 가중치를 정한다고 할 수 있다.  
 
-$$  
-Output_i = \sum_{j=1}^{n}Attention(i, j) \cdot V_j  
-$$  
+$$
+Output_i = \sum_{j=1}^{n}Attention(i, j) \cdot V_j
+$$
 
 그리고 두 번째 수식은 Output vector를 계산하는 식이고, "입력 문장 전체를 참조하여 더 관련이 있을 법한 단어를 반영" 한다고 볼 수 있다.  
 예를 들어 $i = 1, n = 3$ 일 때, $Output_1$ 은 아래 세개의 vector의 합이다.  
@@ -97,6 +97,6 @@ Multi-layer Perceptron(MLP)에서 Input Layer의 Patch 단위로 순서를 섞�
 
 ---
 
-## 🔗 참고 링크
+## 🔗 Reference
 [1] [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)  
 [2] [MLP-Mixer](https://arxiv.org/pdf/2105.01601.pdf)
