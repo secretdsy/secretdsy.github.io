@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 또라링
-logo: /assets/images/bio-photo.jpg
 url: "https://secretdsy.github.io"
 description: AI 공부방
 email: secretdsy@gmail.com
