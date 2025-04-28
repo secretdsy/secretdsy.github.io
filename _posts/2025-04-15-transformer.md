@@ -50,6 +50,8 @@ Recurrent Neural Network(RNN)은 시퀀스 데이터를 다루기 위해 고안�
 
 이를 개선하기 위해 Long Short-Term Memory(LSTM)과 Gated Recurrent Unit(GRU) 같은 모델이 제안되었지만, 근본적으로 "순차적 구조"를 완전히 벗어나지는 못했다.
 
+---
+
 ## 3. Self-Attention
 
 **Self-Attention은 뭘까?**  
